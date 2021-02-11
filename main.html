@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./jscolor.js"></script>
+    <link rel="stylesheet" href="./ClubhouseProfile.css" />
+  </head>
+  <body>
+    <h1><p>&#x1F389;</p>Welcome!</h1>
+    <h3>Clubhouse</h3>
+    <p id="profile">Customizing a profile</p>
+    <div id="imageDiv">
+      <label id="fileUploadLabel" for="fileUpload"></label>
+      <input type="file" id="fileUpload" accept="image/*" onchange="fileUpload(event)"/>
+    </div>
+    <div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <p>Color</p>
+      <div id="colorDiv" onclick="colorClick()"/>
+      <input onchange="colorChange()" id="colorPicker" value="3399FF" data-jscolor="{}">
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="./ClubhouseProfile.js"></script>
+
+
+<!--270F 펜
+1F3A8 팔레트-->

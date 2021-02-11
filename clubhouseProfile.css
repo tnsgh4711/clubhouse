@@ -1,0 +1,70 @@
+#imageDiv {
+  background:black;
+  min-width:132px;
+  min-height: 132px;
+  width:132px;
+  height:132px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 55px;
+  border : solid black;
+  box-sizing: border-box;
+//  background-image: url('./5.png');
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#image {
+  border-radius: 55px;
+  padding-top:3px;
+  width:120px;
+  height:120px;
+}
+
+#fileUpload {
+  display: none;
+}
+
+label {
+  color:white;
+  //font-size: 40px;
+  padding:0px;
+  margin:0px;
+  display: block;
+}
+
+h1{
+  font-family: url('./arlrdbd.ttf');
+  display:inline-flex;
+  font-size:24px;
+  margin-bottom: 50px;
+}
+
+h3{
+  font-size:20px;
+  margin: 0px;
+}
+
+body{
+  //text-align: center;
+  text-align: -webkit-center;
+}
+
+p{
+  margin:0px;
+}
+
+#profile{
+  margin-bottom: 30px;
+}
+
+#colorPicker{
+  display:none;
+}
+
+#colorDiv {
+  width:168px;
+  height:31px;
+  background-color: black;
+}
