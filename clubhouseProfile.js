@@ -42,8 +42,8 @@ function fileUpload(event){
       var ctx = canvas.getContext("2d");
       ctx.drawImage(img, 0, 0);
 
-      var MAX_WIDTH = 140;
-      var MAX_HEIGHT = 140;
+      var MAX_WIDTH = 175;
+      var MAX_HEIGHT = 175;
       var width = this.width;
       var height = this.height;
 
@@ -67,7 +67,7 @@ function fileUpload(event){
       var dataUrl = canvas.toDataURL("image/png");
       //document.getElementById("imageDiv").style.backgroundImage = "url("+e.target.result+")";
       document.getElementById("imageDiv").style.backgroundImage = "url("+dataUrl+")";
-      document.getElementById("fileUploadLabel").style.display = "none";
+      document.getElementById("textHolder").style.display = "none";
     }
   }
   reader.readAsDataURL(document.getElementById("fileUpload").files[0])

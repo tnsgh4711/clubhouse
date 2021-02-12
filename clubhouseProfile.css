@@ -11,10 +11,9 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 55px;
-  border : solid black;
+  border-radius: 75px;
+  border : solid #14FFFF 13px;
   box-sizing: border-box;
-//  background-image: url('./5.png');
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -45,7 +44,7 @@ h1, h2{
   //font-size:24px;
   margin-bottom: 50px;
   color:#484848;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 h3{
@@ -74,7 +73,8 @@ p{
 
 #colorPicker{
   //display:none;
-  background-color:black;
+  background-color:#14FFFF;
+  color:#14FFFF;
   background-image:none !important;
   border: 0px;
   width:168px;
