@@ -3,7 +3,7 @@
   font-family: "arlrdbd";
 }
 #imageDiv {
-  background:black;
+  background:#484848;
   min-width:175px;
   min-height: 175px;
   width:175px;
@@ -80,6 +80,7 @@ p{
   width:168px;
   height:31px;
   border-radius: 9px;
+  margin-bottom: 10px;
 }
 
 #colorDiv {
@@ -108,9 +109,14 @@ p{
   border-radius: 19px;
   border: 0px;
   padding: 20px;
+  border-bottom: solid 1px #dad9d8;
 }
 
 #controlDiv > p{
   text-align: left;
   padding:10px;
+}
+
+#imageDiv > p{
+  color:#F0EEE5;
 }

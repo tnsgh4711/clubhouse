@@ -13,13 +13,14 @@
     <h3>Clubhouse</h3>
     <p id="profile">Customizing a profile</p>
     <div id="imageDiv" onclick="imageUpload()">
+      <p>Please select <br /> your profile</p>
       <label id="fileUploadLabel" for="fileUpload"></label>
       <input type="file" id="fileUpload" accept="image/*" onchange="fileUpload(event)"/>
     </div>
     <div id="controlDiv">
-      <p>Colors</p>
-      <input onchange="colorChange()" id="colorPicker" value="3399FF" data-jscolor="{}">
-      <p>Line</p>
+      <p>&#x1F3A8;Color</p>
+      <input onchange="colorChange()" id="colorPicker" value="3399FF" data-jscolor="{}" readonly>
+      <p>&#x270F;Line</p>
       <div class="slidecontainer">
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
       </div>
