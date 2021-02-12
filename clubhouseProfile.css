@@ -17,6 +17,7 @@
 //  background-image: url('./5.png');
   background-position-x: center;
   background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 #image {
@@ -43,24 +44,27 @@ h1{
   display:inline-flex;
   //font-size:24px;
   margin-bottom: 50px;
-  font-size:
+  color:#484848;
 }
 
 h3{
   font-size:20px;
   margin: 0px;
+  color: #484848;
 }
 
 body{
   //text-align: center;
   text-align: -webkit-center;
   font-family: "arlrdbd";
-  width:375px;
-  height:812px;
+  width:100%;
+  height:100%;
+  background-color: #F0EEE5;
 }
 
 p{
   margin:0px;
+  color: #484848;
 }
 
 #profile{
@@ -78,7 +82,35 @@ p{
 }
 
 #colorDiv {
-  width:168px;
-  height:31px;
-  background-color: black;
+
+}
+
+#done{
+  margin-top:20px;
+  border-radius: 25px;
+  width:132px;
+  height: 40px;
+  border:0px;
+  background-color: #5D74A7;
+  color: #FFFFFF;
+}
+
+.slider{
+  width:210px;
+}
+
+#controlDiv{
+  margin-top: 80px;
+  width:220px;
+  height:160px;
+  background-color: white;
+  border-radius: 19px;
+  border: 0px;
+  padding: 20px;
+
+}
+
+#controlDiv > p{
+  text-align: left;
+  padding:10px;
 }

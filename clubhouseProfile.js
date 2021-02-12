@@ -21,7 +21,7 @@ slider.oninput = function() {
   //document.getElementById("image").style.width = (120 - this.value) + 'px';
   //document.getElementById("image").style.height = (120 - this.value) + 'px';
   //document.getElementById("image").style.borderWidth = (120 - this.value) + 'px';
-  document.getElementById("imageDiv").style.borderWidth = ((120 - this.value) / 2) + 'px';
+  document.getElementById("imageDiv").style.borderWidth = ((this.value) / 4) + 'px';
 }
 
 function colorChange(){
@@ -33,13 +33,63 @@ function colorChange(){
 
 function fileUpload(event){
   var reader = new FileReader();
+  var img = document.createElement("img");
   reader.onload = function( e ){
-    document.getElementById("imageDiv").style.backgroundImage = "url("+e.target.result+")";
-    document.getElementById("fileUploadLabel").style.display = "none";
+    img.src = e.target.result;
+
+    img.onload = function(){
+      var canvas = document.createElement("canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+
+      var MAX_WIDTH = 140;
+      var MAX_HEIGHT = 140;
+      var width = this.width;
+      var height = this.height;
+
+      if (width > height) {
+        if (width > MAX_WIDTH) {
+          height *= MAX_WIDTH / width;
+          width = MAX_WIDTH;
+        }
+      } else {
+        if (height > MAX_HEIGHT) {
+          width *= MAX_HEIGHT / height;
+          height = MAX_HEIGHT;
+        }
+      }
+      canvas.width = width;
+      canvas.height = height;
+
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, width, height);
+
+      var dataUrl = canvas.toDataURL("image/png");
+      //document.getElementById("imageDiv").style.backgroundImage = "url("+e.target.result+")";
+      document.getElementById("imageDiv").style.backgroundImage = "url("+dataUrl+")";
+      document.getElementById("fileUploadLabel").style.display = "none";
+    }
   }
   reader.readAsDataURL(document.getElementById("fileUpload").files[0])
 }
 
 function imageUpload(){
   document.getElementById("fileUpload").click();
+}
+
+
+function downloadDiv(){
+  var div = document.getElementById("imageDiv");
+  html2canvas(div).then(function(canvas){
+    var myImage = canvas.toDataURL();
+    downloadURI(myImage, "MaSimulation.png");
+  });
+}
+
+function downloadURI(uri, name){
+  var link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
 }
