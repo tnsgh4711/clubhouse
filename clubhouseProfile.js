@@ -27,6 +27,8 @@ slider.oninput = function() {
 function colorChange(){
   var color = document.getElementById("colorPicker").value;
   document.getElementById("imageDiv").style.borderColor = color;
+  document.getElementById("colorPicker").style.backgroundColor = color;
+  document.getElementById("colorPicker").style.color = color;
 }
 
 function fileUpload(event){
@@ -35,9 +37,4 @@ function fileUpload(event){
     document.getElementById("imageDiv").style.backgroundImage = "url("+e.target.result+")";
     document.getElementById("fileUploadLabel").style.display = "none";
   }
-  console.log(reader.readAsDataURL(document.getElementById("fileUpload").files[0]))
-}
-
-function colorClick(){
-  document.getElementById("colorPicker").click();
 }

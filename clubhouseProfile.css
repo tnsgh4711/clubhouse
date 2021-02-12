@@ -1,3 +1,7 @@
+@font-face {
+  src: url("./arlrdbd.ttf");
+  font-family: "arlrdbd";
+}
 #imageDiv {
   background:black;
   min-width:132px;
@@ -49,6 +53,9 @@ h3{
 body{
   //text-align: center;
   text-align: -webkit-center;
+  font-family: "arlrdbd";
+  width:375px;
+  height:812px;
 }
 
 p{
@@ -60,7 +67,13 @@ p{
 }
 
 #colorPicker{
-  display:none;
+  //display:none;
+  background-color:black;
+  background-image:none !important;
+  border: 0px;
+  width:168px;
+  height:31px;
+  border-radius: 9px;
 }
 
 #colorDiv {
