@@ -37,4 +37,9 @@ function fileUpload(event){
     document.getElementById("imageDiv").style.backgroundImage = "url("+e.target.result+")";
     document.getElementById("fileUploadLabel").style.display = "none";
   }
+  reader.readAsDataURL(document.getElementById("fileUpload").files[0])
+}
+
+function imageUpload(){
+  document.getElementById("fileUpload").click();
 }
