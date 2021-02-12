@@ -4,10 +4,10 @@
 }
 #imageDiv {
   background:black;
-  min-width:132px;
-  min-height: 132px;
-  width:132px;
-  height:132px;
+  min-width:175px;
+  min-height: 175px;
+  width:175px;
+  height:175px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -39,12 +39,13 @@ label {
   display: block;
 }
 
-h1{
+h1, h2{
   font-family: url('./arlrdbd.ttf');
   display:inline-flex;
   //font-size:24px;
   margin-bottom: 50px;
   color:#484848;
+  padding-right: 20px;
 }
 
 h3{
@@ -86,7 +87,7 @@ p{
 }
 
 #done{
-  margin-top:20px;
+  margin-top:60px;
   border-radius: 25px;
   width:132px;
   height: 40px;
@@ -107,7 +108,6 @@ p{
   border-radius: 19px;
   border: 0px;
   padding: 20px;
-
 }
 
 #controlDiv > p{
