@@ -11,13 +11,14 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 75px;
+  //border-radius: 75px;
+  border-radius: 50%;
   border : solid #14FF35 13px;
   box-sizing: border-box;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
-  background-size:  175px;
+  background-size:  125px;
 }
 
 
