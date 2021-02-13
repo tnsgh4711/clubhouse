@@ -22,6 +22,7 @@ slider.oninput = function() {
   //document.getElementById("image").style.height = (120 - this.value) + 'px';
   //document.getElementById("image").style.borderWidth = (120 - this.value) + 'px';
   document.getElementById("imageDiv").style.borderWidth = ((this.value) / 4) + 'px';
+  //document.getElementById("imageDiv").style.backgroundSize = 175 - this.value + 'px';
 }
 
 function colorChange(){
@@ -42,8 +43,8 @@ function fileUpload(event){
       var ctx = canvas.getContext("2d");
       ctx.drawImage(img, 0, 0);
 
-      var MAX_WIDTH = 175;
-      var MAX_HEIGHT = 175;
+      var MAX_WIDTH = 1000;
+      var MAX_HEIGHT = 1000;
       var width = this.width;
       var height = this.height;
 
